@@ -23,6 +23,7 @@ export function Indicator({
     <div className="absolute w-full flex flex-row justify-center md:justify-end gap-5 bottom-[-3.4rem] md:pr-20">
       {slides.map((element, index) => (
         <div
+          key={element.thumbSrc}
           className="box-border rounded-md p-[4px] drop-shadow-md bg-[radial-gradient(192.27%_129.59%_at_0_.89%,#a7e64c_0,#029fd9_31.71%,#611fe7_53.25%,#8840e6_71.78%,#65d5ff_89.56%)] transition duration-300 hover:shadow-lg hover:shadow-indigo-500/50"
           role="button"
           onClick={() => handleChangeSlide(index)}
