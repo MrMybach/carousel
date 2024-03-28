@@ -31,7 +31,7 @@ export function Indicator({
           <img
             src={element.thumbSrc}
             alt={element.alt}
-            className={`transition hover:bg-indigo-900 grayscale hover:grayscale-0 duration-300 ${currentFrame === index ? 'grayscale-0' : ''}`}
+            className={`transition rounded-md hover:bg-indigo-900 grayscale hover:grayscale-0 duration-300 ${currentFrame === index ? 'grayscale-0' : ''}`}
           />
         </div>
       ))}
