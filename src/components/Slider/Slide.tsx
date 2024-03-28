@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 
 type SlideProps = {
   imageSrc: string
-  children?: string | JSX.Element
+  children?: React.ReactNode
 }
 
 export function Slide({ imageSrc, children }: SlideProps) {
