@@ -16,10 +16,6 @@ export function Slide({ imageSrc, children }: SlideProps) {
     }
 
     if (imageSrcRef.current !== imageSrc) {
-      console.log(
-        'imageSrcRef.current !== imageSrc',
-        imageSrcRef.current !== imageSrc,
-      )
       imageSrcRef.current = imageSrc
       setIsApplied(true)
     }
