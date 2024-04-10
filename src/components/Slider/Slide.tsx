@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { PropsWithChildren, useEffect, useRef, useState } from 'react'
 
-type SlideProps = {
+type SlideProps = PropsWithChildren & {
   imageSrc: string
-  children?: React.ReactNode
 }
 
 export function Slide({ imageSrc, children }: SlideProps) {
